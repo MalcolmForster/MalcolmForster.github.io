@@ -1,0 +1,226 @@
+:root {
+  --h2Height: 10vw;
+  --gap: 20px;
+  --background: rgb(56, 56, 56);
+}
+
+
+body {
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(20, 14, 14);
+  width: 100%;
+  margin: 0px;
+}
+
+.header {
+  position: fixed;
+  z-index: 5;
+  margin: var(--gap);
+  width:calc(100vw - 3*var(--gap));
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+  background-color: rgb(199, 199, 199);
+  box-shadow: 0 0 5px;
+  border-radius: 20px; 
+  height: calc(5vw + 1*var(--gap));
+}
+
+.header h1 {
+  font-size: 5vw;
+  color: darkslategray;  
+  text-transform: uppercase;
+  text-align: center;
+  margin:0;
+}
+
+.sidenav {   
+  width:  200px;
+  min-width:  200px;
+  height: calc(100vh - ((5vw) + 8*var(--gap)));
+  border-radius: 20px;
+  top: calc(5vw + 5*var(--gap));
+  z-index: 9;
+  position: fixed;
+  background-color: #8f8e8e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 5px;
+}
+
+nav a {
+  padding: 6px 20px 6px 20px;
+  width: 140px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #e7e7e7;
+  display: inline-block;  
+}
+
+.topbacking {
+  background-color: var(--background);
+  position: fixed;
+  width: 100vw;
+  height:calc(5vw + 5*var(--gap));
+  z-index: 4;
+}
+
+.transparent {
+  color: transparent;
+
+}
+
+.gradient {
+  background-image: linear-gradient(var(--background), rgba(255,0,0,0));
+  margin-top:calc(5vw + 5*var(--gap));
+  position: fixed;
+  width: 100vw;
+  height:20vh;
+  z-index: 4;
+}
+
+.gradient p {
+  color: transparent;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+  background-color: #b2b2b2;
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 140px;
+}
+
+.active {
+  background-color: #818181;
+  border-radius: 5px;
+}
+
+
+.wrapper {
+  display: flex;
+  width: (100% - var(--gap));
+  padding-left: var(--gap);
+}
+
+.section {
+  top: calc(5vw + 5*var(--gap));
+  align-items: center;
+  object-fit: cover;
+  box-shadow: 0 0 5px;
+  background: rgb(86, 86, 86);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.other {
+  position:initial;
+  opacity: 1.0;
+  transform: scale('1.0');
+  text-decoration: underline;
+}
+
+
+.topsection {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5;  
+  opacity: 1.0;
+  transform: scale('1.0');
+  box-shadow: 0 0 5px rgb(218, 116, 32);;
+}
+
+.section h2 {
+  padding: 20px;
+  padding-top:150px;
+  padding-bottom:150px;
+}
+
+.section p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main {
+  position: absolute;
+  width : calc(100vw - 200px - 4*var(--gap));
+  top: calc(5vw + 5*var(--gap));
+  margin-left: calc(200px + var(--gap));
+  margin-right: var(--gap);
+}
+
+.parallax {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none;
+}
+
+.bgFish {
+  background-image: url(../images/fishr.jpg);
+}
+
+.bgFE {
+  background-image: url(../images/Bitcoins.jpg);
+}
+
+.bgSS {
+  background-image: url(../images/racecar.jpg);
+}
+
+.bgTM {
+  background-image: url(../images/llamas.jpg);
+}
+
+.bgWJD {
+  background-image: url(../images/senna.jpg);
+}
+
+
+
+h2 {
+  font-size: 10vw;
+  margin: var(--gap);  
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 20px #000;
+  text-align: center;
+}
+
+h2 a {
+  color: rgb(255, 255, 255);
+}
+
+label {
+  font-size: 15;
+  color: rgb(107, 101, 101);
+}
+
+p {
+  font-size: 20px;
+  color: rgb(190, 190, 190);
+  text-align: justify;
+  text-justify: auto;
+}
+
+h3 {
+  font-size: 50px;
+  padding:20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin:0px;
+}
+
+.topsection h3 {
+  font-size: 30px;
+  padding:20px;
+  text-align: center;
+  color: rgb(218, 116, 32);
+  text-shadow: 0 0 5px rgb(143, 62, 0);
+  margin:0px;
+}
