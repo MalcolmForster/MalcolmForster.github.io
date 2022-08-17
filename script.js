@@ -23,13 +23,9 @@ $(window).on('load', function() {
                 topsection.css({
                     opacity: topSOpa,
                     transform: 'scale('+trans+')'
-                });
-
-                
+                });                
             }
         });
-
-
     });
 
 
