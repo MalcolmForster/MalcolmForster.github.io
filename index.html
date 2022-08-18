@@ -1,13 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="formatting/MainFormat.css?v=<?php echo time(); ?>">
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
+
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Malcolm's Website</title>         
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malcolm's Website</title>
 </head>
 
 <!-- 
@@ -28,96 +28,199 @@
         Token Miner
         Welded Joint Designer
  -->
+
 <body>
 
-<div class="header">
-    <h1>Malcolm Forster</h1>
-</div>
+    <div class="header">
+        <h1>Malcolm Forster</h1>
+    </div>
 
-<!-- <div class="topbacking transparent">
+    <!-- <div class="topbacking transparent">
     <p class="transparent">Testing</p>
 </div> -->
 
-<!-- <div class="gradient transparent">
+    <!-- <div class="gradient transparent">
     <p class="transparent">Testing</p>
 </div> -->
 
-<div class="wrapper">  
+    <div class="wrapper">
 
-    <!-- <nav class="sidenav">
+        <!-- <nav class="sidenav">
         <a href="#top">Top</a><br>
         <a href="#FishingTrip">Fishr</a><br>
         <a href="#SimpleSync">SimpleSync</a><br>
         <a href="#Welded Joint Designer">Welded Joint Designer</a><br>
     </nav>  -->
 
-    <div class="main">
-        <div class = "section"> <!--instead of a fly away might just make into a popup, as it is a lot more natural-->
-            <h4>A website to access the websites and software designed and created by Malcolm Forster</h4>
-
-            <p>Hello, welcome to this small website which is meant to show the off my skills in the world of Information Technology.<br><br>
-            Please check out the websites below. These were to help me understand and learn about how a webserver is run efficiently as well as the programming required for both frontend and backend development.<br><br>
-            There are multiple databases in use, each customised to suit each website's purpose. A vast array of programming languages and development stacks have been used in these webpages to look into functionality, form and security. An explaination of each website is given in in the list below, as well as the methods used to create them.
-            </p>
-            <p>Hello, welcome to this small website which is meant to show the off my skills in the world of Information Technology.<br><br>
-            Please check out the websites below. These were to help me understand and learn about how a webserver is run efficiently as well as the programming required for both frontend and backend development.<br><br>
-            There are multiple databases in use, each customised to suit each website's purpose. A vast array of programming languages and development stacks have been used in these webpages to look into functionality, form and security. An explaination of each website is given in in the list below, as well as the methods used to create them.
-            </p>
-        </div>
-
-        <div class="section">       
-            <div class = "section bgCG bgImage">
-                <h2 id="CommunityGardens" class = "other">Community Gardens</h2>
-                <!-- <h2 id="FishingTrip" class = "other"><a href = "../FishingTrip" target="_blank">FishingTrip</a></h2> -->
+        <div class="main">
+            <div class="section">
+                <!--instead of a fly away might just make into a popup, as it is a lot more natural-->
+                <p> Hello, welcome to this small website which shows off my skills in the world of
+                    Information Technology. Please have a look at my on going projects, where a brief explanation for each is given below.<br><br>
+                    I have used a range of languages in these projects; HTML, CSS, javascript, python and the dotnet framework. Databases used are microsoft SQL and MySQL.
+                </p>
             </div>
-            <h3>See what's growing in your neighbourhood</h3>
-            <h4><a target="_blank" href="">Link to GitHub repository</a></h4>
 
-            <!-- <h4><a target="_blank" href="">Try it out through an ngrok tunnel</a></h4> -->
-            <p>Ever wondered how you neighbour always seems to grow bigger tomatoes than you? This is no longer a secret! Although in its beginning stages this webapp has the aim of letting you in on the worlds gardening secrets. Not only this, but it aims to aid you track when plants were fertilised or havested. The idea behind this app is by using a vast amount of data from its users, predictions can be made about when to plant and harvest or protect against hash weather. Recommendations can be made as to other plants and vegetables a user can try based on the climate of their locations. Will then look at expanding this idea to recommend where these can be purchased locally.</br></br>
-            This website is in its infancy but it will allow for the opporunity to learn about using client location within an app. The aim to use only dotnet architecture for the entire project. 
-            </p>
-        </div>
+            <div class="section">
+                <div class="section bgFish bgImage">
+                    <h2 id="FishingTrip" class="other">FishingTrip</h2>
+                    <!-- <h2 id="FishingTrip" class = "other"><a href = "../FishingTrip" target="_blank">FishingTrip</a></h2> -->
+                </div>
+                <h3>FishingTrip - The only website for fishing</h3>
+                <h4><a ref="noopener" target="_blank" href="https://github.com/MalcolmForster/FishingTrip">Link to
+                        GitHub repository</a></h4>
+                <h4><a ref="noopener" target="_blank" ref="noopener" href="https://7626-206-83-102-85.au.ngrok.io/">Try
+                        it out through ngrok</a></h4>
+                <p>
+                    This is an app that allows the user to make a quicker decision on where to go for fishing. It shows
+                    the swell
+                    forecast and tides for multiple fishing spots over multiple days, so it is easier to decided the
+                    best place to go.
+                    As a land based fisherman myself, it is important for safety to know the swell size and power so that you don't end up going out in dangerous conditions.<br><br>
 
-        <div class="section">       
-            <div class = "section bgFish bgImage">
-                <h2 id="FishingTrip" class = "other">FishingTrip</h2>
-                <!-- <h2 id="FishingTrip" class = "other"><a href = "../FishingTrip" target="_blank">FishingTrip</a></h2> -->
+                    <img src="images/FTFavourites.jpg" alt="FTFavourites" class="fitImage" />
+                    <label>Users favourite spots are readily available</label><br><br>
+                    <img src="images/FTNewSearch.jpg" alt="FTNewSearch" class="fitImage" />
+                    <label>A searched fishing spot forecast being found by python webscraper</label><br><br>
+                    <img src="images/FTFoundSearch.jpg" alt="FTFoundSearch" class="fitImage" />
+                    <label>Searched spot's forecast displayed</label><br><br>
+                    <img src="images/FTDays.jpg" alt="FTDays" class="fitImage" />
+                    <label>The user is able to alter the days shown, accomplished with javascript</label><br><br>
+
+                    Currently this webapp has a login server which allows the user to save favourite fishing spots.
+                    These spots forecast
+                    conditions are updated constantly to ensure the latest information is always available. The user can
+                    also search for
+                    any fishing spots all over the world. This site gathers information from forecast sites using a
+                    python webscraper,
+                    while the interaction between client and server is through dotnet.</br></br>
+
+                    When a fishing spot is searched or added to a user's favourite list it is added to a task list
+                    table. The server is setup to periodically check this table and if a task is found, the python
+                    script is started to find the requested spot's forecast. The forecast div is also periodically
+                    refreshed to see if the data has been found yet, and populates it when found. These above steps only
+                    occurs if the spot's forecast is not already found in the database, otherwise the prexisting data is
+                    used instead.
+
+                    Further down the track a user can keep track of their successes when fishing, and the site will
+                    automatically include the forecast conditions that led that good fishing day. It will then alert
+                    when similar conditions are around the corner so hopefully the user can get out there with the big
+                    fish once again.</br></br>
+
+                    The next features to be added is methods to organise fishing trips with a group easily, this will
+                    pass on all
+                    information such as conditions and weather to everyone invited and allows for alterations to the
+                    plan by
+                    everyone in the fishing group.</br></br>
+
+                    Previously I created a PHP website that handled the social aspects of this, with the users being
+                    able to add friends,
+                    submit general posts, fishing reports, and comment on friends posts, and can be found on my github.
+                    However, for the
+                    backend architecture it was decided to change to dotnet. However, these original ideas are to soon
+                    be implemented
+                    into the new dotnet webapp.
+                </p>
+            </div>            
+
+            <div class="section">
+                <div class="section bgWJD bgImage">
+                    <h2 class="other" id="Welded Joint Designer">Welded Joint Designer</h2>
+                </div>
+                <h3>Accurate steel joint detailing, fast</h3>
+                <h4><a ref="noopener" target="_blank" href="https://github.com/MalcolmForster/Steel-Joint-Designer">Link
+                        to GitHub
+                        repository</a></h4>
+                <p>
+                    While doing my Structural Engineering Masters, I had a small play with coding in C#, and the Welded Joint Designer program is the
+                    result of
+                    that. The sizing calculations for steel connection can be quite tricky, and I believed that a
+                    calculator
+                    designed to help the engineer with this step will make it quicker and more accurate. The idea behind
+                    this
+                    program is to take the forces and moments from a SAP style software, which runs analysis on a
+                    building or
+                    section of a building, and produces a set of expected forces and moments on the joints. Using these results, my program will then size all the elements of the steel joints to ensure that they
+                    conform to the
+                    latest structural standards.<br><br>
+                    <img src="images/WJDOutput.jpg" alt="WJDOutput" class="fitImage" />
+                    <label>An example output, with an overview of the joint on the left, and location and size of welds on the right.</label><br><br>
+
+                    There is both a simplified input method, where the engineer selects the style of joint from a drop
+                    down list,
+                    and the beginning of a more complex system where the engineer can 'draw' the joint to analyse. The
+                    latter method
+                    required interaction with a canvas object and connects beam and column lines with node points.
+                    Further along in
+                    the development, this information is then going to be analysed by the calculation portion of the
+                    program to have
+                    it's elements also sized.<br>
+                    <img src="images/WJDSimpleInput.jpg" alt="WJDSimpleInput" class="fitImage" />
+                    <label>The simplified input page where an engineer chooses the size of beams and columns in a joint, and the forces/moments acting on them</label><br><br>
+                    <img src="images/WJDAdvInput.jpg" alt="WJDAdvInput" class="fitImage" />
+                    <label>The beginning of a more complex method of creating a joint for analysis</label><br><br>
+                </p>
             </div>
-            <h3>FishingTrip - The only website for fishing</h3>
-            <h4><a target="_blank" rel=”noopener” href="https://github.com/MalcolmForster/FishingTrip">Link to GitHub repository</a></h4>
-            <h4><a target="_blank" rel=”noopener” href="https://7626-206-83-102-85.au.ngrok.io/">Try it out through an ngrok tunnel</a></h4>
 
-            <p>FishingTrip is a website designed to help fishermen(and fisherwoman!) keep track of their best catches! Not only this, it automatically keeps track of the weather and other conditions that led to that PB, and will alert when similar conditions are around the corner!</br></br>
-            With the aim to be the facebook of the fishing world, this intuitive website has a range of features for the most mad keen of us. Organise fishing trips with friend easily, this will pass on all information such as conditions and weather to everyone invited and allows for alterations to the game plan by everyone.</br></br>
-            Using the most accurate information available, this site is a must have tool for anyone who is looking for the best day fishing!</br></br>
-            Currently this webapp has a log in server which allows the user to save favourite fishing spots which the forecast conditions are updated constantly updated so ensure the latest are always available. The user can also search for any fishing spots all over the world. This site gathers information from forecast sites using a python webscraper, while the interaction between client and server is through dotnet.
-            </p>
-        </div>
+            <div class="section">
+                <div class="section bgSimple bgImage">
+                    <h2 class="other" id="SimpleSync">SimpleSync</h2>
+                </div>
+                <h4><a ref="noopener" target="_blank" href="https://github.com/MalcolmForster/SimpleSync">Link to GitHub
+                        repository</a>
+                </h4>
+                <p>
+                    To help backup my projects I created a simple synchronisation program. This is made in python and
+                    use Tkinter to
+                    render a GUI. This program walks through both a working folder and a backup folder and checks to see
+                    if any
+                    differences in directorys exist and files. New files are copied over, and deleted files are renamed
+                    and sent to
+                    obsolete folders in the backup directory.<br><br>
 
-        <div class="section">
-            <div  class = "section bgSimple bgImage">
-                <h2 class = "other" id="SimpleSync">SimpleSync</h2>
+                    Most other files, except those which are selected to not be checked which I do not usually edit
+                    (PDFs and
+                    images),
+                    are then compared via binary comparison. Originally this was done by MD5 hashing, and this method
+                    still exists
+                    in the
+                    code, and will be reimplement as an option. The files which are found to have been altered are
+                    copied across to
+                    the backup, where the obsolete versions are moved to the obsolete folders.<br><br>
+
+                    Future ideas for this program will be automatic synchronisation at a certain interval, and a method
+                    to add
+                    multiple
+                    sync/backup locations. <br><br>
+                    <img src="images/SSGui.jpg" alt="SSGui" class="fitImage" />
+                    <label>SimpleSync's simple GUI made with Tkinter</label><br><br>
+                </p>
             </div>
-            <h4><a target="_blank" rel=”noopener” href="https://github.com/MalcolmForster/SimpleSync">Link to GitHub repository</a></h4>
-            <p>Hello, welcome to this small website which is meant to show the off my skills in the world of Information Technology.<br><br>
-            Please check out the websites below. These were to help me understand and learn about how a webserver is run efficiently as well as the programming required for both frontend and backend development.<br><br>
-            There are multiple databases in use, each customised to suit each website's purpose. A vast array of programming languages and development stacks have been used in these webpages to look into functionality, form and security. An explaination of each website is given in in the list below, as well as the methods used to create them.
-            </p>
-        </div>
 
-        <div class="section">
-            <div  class = "section bgWJD bgImage">
-                <h2 class = "other" id="Welded Joint Designer">Welded Joint Designer</h2>
+            <div class="section">
+                <div class="section bgCG bgImage">
+                    <h2 id="CommunityGardens" class="other">The next project - Community Gardens</h2>
+                    <!-- <h2 id="FishingTrip" class = "other"><a href = "../FishingTrip" target="_blank">FishingTrip</a></h2> -->
+                </div>
+                <h3>See what's growing in your neighbourhood</h3>
+                <h4><a ref="noopener" target="_blank" href="">Link to GitHub repository - Not created yet</a></h4>
+
+                <!-- <h4><a target="_blank" href="">Try it out through an ngrok tunnel</a></h4> -->
+                <p>
+                    Ever wondered how you neighbour always seems to grow bigger tomatoes than you? This is no longer a
+                    secret! Although in its beginning stages this webapp has the aim of letting you in on the world's
+                    gardening secrets. Not only this, but it will aid keeping track of all steps of your gardening, such as when plants were fertilised or
+                    havested. The idea behind this app is by using a vast amount of data from its users, predictions can
+                    be made about when to plant and harvest or protect against hash weather. Recommendations can be made
+                    as to other plants and vegetables a user can try based on the climate of their location and what other users are growing around them. Will then
+                    look at expanding this idea to recommend where these plants can be purchased locally.</br></br>
+
+                    This website is in its infancy but it will allow for the opportunity to learn about using client
+                    location within an app. The aim is to use only dotnet architecture for the entire project.
+                </p>
             </div>
-            <h4><a target="_blank" rel=”noopener” href="https://github.com/MalcolmForster/Steel-Joint-Designer">Link to GitHub repository</a></h4>
-            <p>Hello, welcome to this small website which is meant to show the off my skills in the world of Information Technology.<br><br>
-            Please check out the websites below. These were to help me understand and learn about how a webserver is run efficiently as well as the programming required for both frontend and backend development.<br><br>
-            There are multiple databases in use, each customised to suit each website's purpose. A vast array of programming languages and development stacks have been used in these webpages to look into functionality, form and security. An explaination of each website is given in in the list below, as well as the methods used to create them.
-            </p>
         </div>
     </div>
-</div>
 
 </body>
 

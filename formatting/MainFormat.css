@@ -132,7 +132,7 @@ nav a:hover {
 
 .main {
   position:absolute;
-  width:calc(100vw - 40px - 17px);
+  /* width:calc(100vw - 40px - 17px); */
   min-width: 720px;
   align-content: center;
   /* width: calc(100vw - var(--navBarWidth) - 40px); */
@@ -142,8 +142,8 @@ nav a:hover {
   left: 0px;
   right: 0px;
   
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top:20px;
 
   /* margin-left: calc(200px + var(--gap));
@@ -226,6 +226,12 @@ nav a:hover {
   box-shadow:none;
 }
 
+.fitImage {
+  display:block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 h2 {
@@ -238,7 +244,9 @@ h2 {
 }
 
 label {
-  font-size: 15;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
   color: rgb(107, 101, 101);
 }
 
