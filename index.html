@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="formatting/MainFormat.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="formatting/MainFormat.css">
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 
@@ -27,13 +27,41 @@
             </div>
 
             <div class="section">
+                <div class="section bgStruct bgImage">
+                    <h2 id="Structcha" class="other">Structcha</h2>
+                </div>
+                <h3>Structural engineering software package aiming to revolutionise the design method</h3>
+                <h4><a ref="noopener" target="_blank" href="">Link to GitHub repository - Not created yet</a></h4>
+                <p>
+                    Structcha is going to be a new format for engineering software in the structural engineer design process. It will offer a vast array of tools, beginning with joint detailing. The aim of this software package is to give the engineer, draughtsperson, or architect, the latest technology to ensure their projects progress as efficiently as possible.</br></br>
+
+                    The idea behind this software environment is giving it's users access to the vast amount of information required for the design and construction of engineering projects, anywhere. With plans to have applications made for computers and mobile devices, it will be have a vast amount of cross compatability and can be accessed from in the office, out on the road, and at construction sites and factories. Therefore, everyone can access the current projects to be up to date.<br><br>
+
+                    Initally, the computer side of the environment is being worked on. This consists of three parts outlined below:
+                </p>
+
+                <ol class="listNumbered">
+                    <li>Web application<label> - Browser Only</label></li>
+                    <li>Structcha management application<label> - Locally installed</label></li>
+                    <li>Structcha Softwares<label> - Locally installed</label></li>
+                </ol>
+
+                <p>
+
+                    The web application is used to log the user into the Structure environment. From the webapp, the user can then start a session on any of the available softwares which Structcha has, and the user has access to by their company. When a software is selected, this then creates a randomly generated session key which is stored on the database.<br><br>
+                    The webapp also then starts Structcha management application (SMA) on the users computer if it is installed. A series of registry keys will be added when the application is installed, but for now these keys are added manually. The SMA, on startup, is given some parameters, which are the session and the user. SMA then checks these against the database to ensure they are correct. If this check passes, the desired software is started by SMA automatically.
+                    
+                </p>
+            </div>
+
+            <div class="section">
                 <div class="section bgFish bgImage">
                     <h2 id="FishingTrip" class="other">FishingTrip</h2>
                 </div>
                 <h3>FishingTrip - The only website for fishing</h3>
-                <h4><a ref="noopener" target="_blank" href="https://github.com/MalcolmForster/FishingTrip">Link to
+                <h4><a rel="noopener" target="_blank" href="https://github.com/MalcolmForster/FishingTrip">Link to
                         GitHub repository</a></h4>
-                <h4><a ref="noopener" target="_blank" ref="noopener" href="https://ab87-206-83-103-96.au.ngrok.io/">Try
+                <h4><a rel="noopener" target="_blank" ref="noopener" href="https://ab87-206-83-103-96.au.ngrok.io/">Try
                         it out through ngrok</a></h4>
                 <p>
                     This is an app that allows the user to make a quicker decision on where to go for fishing. It shows
@@ -92,7 +120,7 @@
                     <h2 class="other" id="Welded Joint Designer">Welded Joint Designer</h2>
                 </div>
                 <h3>Accurate steel joint detailing, fast</h3>
-                <h4><a ref="noopener" target="_blank" href="https://github.com/MalcolmForster/Steel-Joint-Designer">Link
+                <h4><a rel="noopener" target="_blank" href="https://github.com/MalcolmForster/Steel-Joint-Designer">Link
                         to GitHub
                         repository</a></h4>
                 <p>
@@ -130,7 +158,7 @@
                 <div class="section bgSimple bgImage">
                     <h2 class="other" id="SimpleSync">SimpleSync</h2>
                 </div>
-                <h4><a ref="noopener" target="_blank" href="https://github.com/MalcolmForster/SimpleSync">Link to GitHub
+                <h4><a rel="noopener" target="_blank" href="https://github.com/MalcolmForster/SimpleSync">Link to GitHub
                         repository</a>
                 </h4>
                 <p>

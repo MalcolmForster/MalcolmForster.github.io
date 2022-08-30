@@ -75,6 +75,8 @@ body {
   border-radius: 20px;
 }
 
+
+
 .other {
   position:initial;
   opacity: 1.0;
@@ -87,7 +89,7 @@ body {
   padding-bottom:150px;
 }
 
-.section p {
+.section p, ol {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -95,6 +97,11 @@ body {
   color: black;
   text-align: justify;
   font-size: min(4vmin,24px);
+  list-style:inside decimal;
+}
+
+.bgStruct {
+  background-image: url(../images/StructchaTitle.jpg);
 }
 
 .bgCG {
