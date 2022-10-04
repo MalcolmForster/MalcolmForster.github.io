@@ -23,6 +23,72 @@ body {
   margin: 0px;
 }
 
+
+
+h2 {
+  /* width:100vw; */
+  font-size: 10vmin;
+  margin: var(--gap);  
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 20px #000;
+  text-align: center;
+  text-decoration: none;
+}
+
+label {
+  font-size: min(3vmin,18px);
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(107, 101, 101);
+}
+
+p {
+  color: rgb(72, 72, 72);
+}
+
+p label{
+  width: 100%;
+  align-self: center; 
+}
+
+h3 {
+  font-size: min(7vmin,40px);
+  padding:20px;
+  text-align: center;
+  color: var(--dark-grey);
+  margin:0px;
+}
+
+h3 a {
+  text-align: center;
+  color: grey;
+  padding:20px;
+  border-radius: 10px;
+  font-size: min(7vmin, 25px);
+}
+
+h3 a:hover {
+  background-color: var(--background);
+}
+
+h4 {
+  font-size: min(5vmin, 20px);
+  padding:10px;
+  text-align: center;
+  color: grey;
+  text-shadow: 0 0 5px var(--accent-color-bright);
+  margin:0px;
+}
+
+h4 a {
+  /* font-size: 20px; */
+  /* padding:10px; */
+  text-align: center;
+  color: grey;
+  text-shadow: 0 0 5px var(--accent-color-bright);
+  margin:0px;
+}
+
 .header {
   position: fixed;
   z-index: 5;
@@ -34,16 +100,40 @@ body {
 }
 
 .header h1 {
-  font-size:min(8vmin,50px);
-  margin-top: calc((var(--titleHeight) - min(8vmin,50px))/2);
-  margin-bottom: calc((var(--titleHeight) - min(8vmin,50px))/2);
-  color: grey;  
-  text-transform: uppercase;  text-align: left;
-
+  font-size: min(8vmin, 50px);
+  margin-top: calc((var(--titleHeight) - min(8vmin, 50px))/2);
+  margin-bottom: calc((var(--titleHeight) - min(8vmin, 50px))/2);
+  color: grey;
+  text-transform: uppercase;
+  text-align: left;
   text-align: center;
 }
 
-.active {
+.header h3 {
+  float: left;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: block;
+  padding:0px;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--dark-grey);
+  margin-top: calc(var(--titleHeight)-40px);
+  padding:10px;
+  border-radius: 3px;
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: var(--dark-grey);
+  background-color: var(--light-grey-bg);
+}
+
+
+.active{
   background-color: var(--accent-color-bright);
 }
 
@@ -58,13 +148,13 @@ body {
   top: var(--titleHeight);
   left: 0px;
   right: 0px;  
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
   /* margin-top:20px; */
 }
 
 .section {
-  margin: 0 auto;
+  margin: 0 auto;  
   max-width: 1500px;
   object-fit: cover;
   box-shadow: 0 0 5px;
@@ -74,8 +164,6 @@ body {
   background-position: center;
   border-radius: 20px;
 }
-
-
 
 .other {
   position:initial;
@@ -102,6 +190,17 @@ body {
 
 .bgStruct {
   background-image: url(../images/StructchaTitle.jpg);
+}
+.bgStructWA {
+  background-image: url(../images/Structcha/StructShowTask.png);
+}
+
+.bgStructCN {
+  background-image: url(../images/StructCenterNode.jpg);
+}
+
+.bgStructSA {
+  background-image: url(../images/Structcha/StructSoftwareManagerOpened.png);
 }
 
 .bgCG {
@@ -132,6 +231,9 @@ body {
   margin-right: auto;
   max-height: 700px;
   border-radius: 4px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: gray;
 }
 
 /*.fitImage:hover {
@@ -140,49 +242,3 @@ body {
 } */
 
 
-h2 {
-  /* width:100vw; */
-  font-size: 10vmin;
-  margin: var(--gap);  
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 20px #000;
-  text-align: center;
-  text-decoration: none;
-}
-
-label {
-  font-size: min(3vmin,18px);
-  margin-left: auto;
-  margin-right: auto;
-  color: rgb(107, 101, 101);
-}
-
-p {
-  color: rgb(72, 72, 72);
-}
-
-h3 {
-  font-size: min(6vmin,50px);
-  padding:20px;
-  text-align: center;
-  color: var(--dark-grey);
-  margin:0px;
-}
-
-h4 {
-  font-size: min(5vmin, 20px);
-  padding:10px;
-  text-align: center;
-  color: grey;
-  text-shadow: 0 0 5px var(--accent-color-bright);
-  margin:0px;
-}
-
-h4 a {
-  /* font-size: 20px; */
-  /* padding:10px; */
-  text-align: center;
-  color: grey;
-  text-shadow: 0 0 5px var(--accent-color-bright);
-  margin:0px;
-}
