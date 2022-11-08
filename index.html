@@ -1,179 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="formatting/MainFormat.css">
+
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
     <title>Malcolm's Website</title>
+    <script>
+        $(function(){
+            $("#headerContent").load("header.html"); 
+        });
+    </script>
 </head>
 
 <body>
-    <div class="header">
-        <h3><a rel="noopener" href="./">Home</a></h3>
-        <h1>Malcolm Forster</h1>
-    </div>
+    <div id="headerContent"></div>
+
 
     <div class="wrapper">
-
         <div class="main">
-            <div class="section">
+            <div class="section page-intro">
                 <p> 
                     Hello, welcome to this small website which shows off my skills in the world of
                     Information Technology. Please have a look at my on going projects, where a brief explanation for each is given below.<br><br>
                     I have used a range of languages in these projects; HTML, CSS, javascript, python and the dotnet framework. Databases used are microsoft SQL and MySQL.
                 </p>
             </div>
-
-            <div class="section">
-                <div class="section bgStruct bgImage">
-                    <h2 id="Structcha" class="other">Structcha</h2>
-                </div>
-                <h3>Structural engineering software package aiming to simplify building construction</h3>
-                <h3><a rel="noopener" a rel="noopener" href="structcha.html">Find out more about Structcha</a></h3>
-                
-                <p>
-                    Structcha is going to be a new format for engineering software in the structural engineer design process. The idea behind this software environment is giving it's users access to the vast amount of information required for the design and construction of engineering projects, anywhere.<br/><br/>
-                    With plans to have applications made for computers and mobile devices, it will be have a vast amount of cross compatibility and can be accessed from in the office, out on the road, and at construction sites and factories. Therefore, everyone can access the current projects to be up to date.<br><br>
-                    Initially, the computer side of the environment is being worked on. This consists of three parts outlined below:
-                </p>
-
-                <ol class="listNumbered">
-                    <li>Web application (in an early alpha)<label> - Browser Only</label></li>
-                    <li>CentreNode (beginning development)<label> - Locally installed</label></li>
-                    <li>Structcha Applications (beginning development)<label> - Locally installed</label></li>
-                </ol>
-
-                <p>
-                    The web application is used to log the user into the Structure environment. From the webapp, the user can then start a session on any of the available software from Structcha and given access to by their company. When a software is selected, this then creates a randomly generated session key which is stored on the database.<br><br>
-                    The webapp also then starts the Structcha CentreNode on the users computer if it is installed. A series of registry keys will be added when the application is installed, but for now these keys are added manually.  CentreNode receives the session and the user information from the web app and starts the desired software.
-                </p>
-                <h4>Send me an email if you would like to try this program</h4>
-            </div>
-
-            <div class="section">
-                <div class="section bgFish bgImage">
-                    <h2 id="FishingTrip" class="other">FishingTrip</h2>
-                </div>
-                <h3>FishingTrip - The only website for fishing</h3>
-                <h4><a rel="noopener" target="_blank" href="https://github.com/MalcolmForster/FishingTrip">Link to
-                        GitHub repository</a></h4>
-                <h4><a rel="noopener" target="_blank" href="https://a24d-206-83-102-85.au.ngrok.io/">Try
-                        it out through ngrok</a></h4>
-                <p>
-                    This is an app that allows the user to make a quicker decision on where to go for fishing. It shows
-                    the swell
-                    forecast and tides for multiple fishing spots over multiple days, so it is easier to decided the
-                    best place to go.
-                    As a land based fisherman myself, it is important for safety to know the swell size and power so that you don't end up going out in dangerous conditions.<br><br>
-
-                    <img src="images/FTFavourites.jpg" alt="FTFavourites" class="fitImage" />
-                    <label>Users favourite spots are readily available</label><br><br>
-                    <img src="images/FTNewSearch.jpg" alt="FTNewSearch" class="fitImage" />
-                    <label>A searched fishing spot forecast being found by python a web-scraper</label><br><br>
-                    <img src="images/FTFoundSearch.jpg" alt="FTFoundSearch" class="fitImage" />
-                    <label>Searched spot's forecast displayed</label><br><br>
-                    <img src="images/FTDays.jpg" alt="FTDays" class="fitImage" />
-                    <label>The user is able to alter the days shown, accomplished with javascript</label><br><br>
-
-                    Currently this webapp has a login server which allows the user to save favorite fishing spots.
-                    These spots forecast
-                    conditions are updated constantly to ensure the latest information is always available. The user can
-                    also search for
-                    any fishing spots all over the world. This site gathers information from forecast sites using a
-                    python web-scraper,
-                    while the interaction between client and server is through dotnet.</br></br>
-
-                    When a fishing spot is searched or added to a user's favorite list it is added to a task list
-                    table. The server is setup to periodically check this table and if a task is found, the python
-                    script is started to find the requested spot's forecast. The forecast div is also periodically
-                    refreshed to see if the data has been found yet, and populates it when found. These above steps only
-                    occurs if the spot's forecast is not already found in the database, otherwise the pre-existing data is
-                    used instead.
-
-                    Further down the track a user can keep track of their successes when fishing, and the site will
-                    automatically include the forecast conditions that led that good fishing day. It will then alert
-                    when similar conditions are around the corner so hopefully the user can get out there with the big
-                    fish once again.</br></br>
-
-                    The next features to be added is methods to organise fishing trips with a group easily, this will
-                    pass on all
-                    information such as conditions and weather to everyone invited and allows for alterations to the
-                    plan by
-                    everyone in the fishing group.</br></br>
-
-                    Previously I created a PHP website that handled the social aspects of this, with the users being
-                    able to add friends,
-                    submit general posts, fishing reports, and comment on friends posts, and can be found on my github.
-                    However, for the
-                    backend architecture it was decided to change to dotnet. However, these original ideas are to soon
-                    be implemented
-                    into the new dotnet webapp.
-                </p>
-                <h4>Send me an email if you would like to try this program</h4>
-            </div>            
-
-            <div class="section">
-                <div class="section bgWJD bgImage">
-                    <h2 class="other" id="Welded Joint Designer">Welded Joint Designer</h2>
-                </div>
-                <h3>Accurate steel joint detailing, fast</h3>
-                <h4><a rel="noopener" target="_blank" href="https://github.com/MalcolmForster/Steel-Joint-Designer">Link
-                        to GitHub
-                        repository</a></h4>
-                <p>
-                    While doing my Structural Engineering Masters, I had a small play with coding in C#, and the Welded Joint Designer program is the
-                    result of
-                    that. The sizing calculations for steel connection can be quite tricky, and I believed that a
-                    calculator
-                    designed to help the engineer with this step will make it quicker and more accurate. The idea behind
-                    this
-                    program is to take the forces and moments from a SAP style software, which runs analysis on a
-                    building or
-                    section of a building, and produces a set of expected forces and moments on the joints. Using these results, my program will then size all the elements of the steel joints to ensure that they
-                    conform to the
-                    latest structural standards.<br><br>
-                    <img src="images/WJDOutput.jpg" alt="WJDOutput" class="fitImage" />
-                    <label>An example output, with an overview of the joint on the left, and location and size of welds on the right.</label><br><br>
-
-                    There is both a simplified input method, where the engineer selects the style of joint from a drop
-                    down list,
-                    and the beginning of a more complex system where the engineer can 'draw' the joint to analyse. The
-                    latter method
-                    required interaction with a canvas object and connects beam and column lines with node points.
-                    Further along in
-                    the development, this information is then going to be analysed by the calculation portion of the
-                    program to have
-                    it's elements also sized.<br>
-                    <img src="images/WJDSimpleInput.jpg" alt="WJDSimpleInput" class="fitImage" />
-                    <label>The simplified input page where an engineer chooses the size of beams and columns in a joint, and the forces/moments acting on them</label><br><br>
-                    <img src="images/WJDAdvInput.jpg" alt="WJDAdvInput" class="fitImage" />
-                    <label>The beginning of a more complex method of creating a joint for analysis</label>
-                </p>
-                <h4>Send me an email if you would like to try this program</h4>
-            </div>
-
-            <div class="section">
-                <div class="section bgSimple bgImage">
-                    <h2 class="other" id="SimpleSync">SimpleSync</h2>
-                </div>
-                <h4><a rel="noopener" target="_blank" href="https://github.com/MalcolmForster/SimpleSync">Link to GitHub
-                        repository</a>
-                </h4>
-                <p>
-                    To help backup my projects I created a simple synchronisation program. This is made in python and use Tkinter to render a GUI. This program walks through both a working folder and a backup folder and checks to see if any differences in directory's exist and files. New files are copied over, and deleted files are renamed and sent to obsolete folders in the backup directory.<br><br>
-                    Most other files, except those which are selected to not be checked which I do not usually edit (PDFs and images), are then compared via binary comparison. The files which are found to have been altered are copied across to the backup, where the obsolete versions are moved to the obsolete folders.<br><br>
-                    To speed up comparison speed over networks, the user can now select to keep an updated MD5 hashmap of the currently backed up files, and then compare the current files to it. This vastly reduces the amount of data needing to be transferred to the client's PC, but changes in the backup will be ignored until a new hashmap is created.<br><br>
-
-                    Future ideas for this program will be automatic synchronisation at a certain interval, and a method to add multiple sync/backup locations. <br><br>
-                    <img src="images/SSGui.jpg" alt="SSGui" class="fitImage" />
-                    <label>SimpleSync's simple GUI made with Tkinter</label>
-                </p>
-                <h4>Send me an email if you would like to try this program</h4>
-            </div>
-            <br/>
         </div>
     </div>
 

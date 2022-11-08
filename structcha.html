@@ -8,15 +8,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Malcolm's Website</title>
+    <script>
+        $(function(){
+            $("#headerContent").load("header.html"); 
+        });
+    </script>
 </head>
 
 <body>
 
-    <div class="header">
-        <h3><a rel="noopener" href="./">Home</a></h3>
-        <h1>Malcolm Forster</h1>        
-    </div>
-    
+    <div id="headerContent"></div>    
 
     <div class="wrapper">
         <div class="main">

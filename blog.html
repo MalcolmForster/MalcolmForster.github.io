@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="formatting/MainFormat.css">
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malcolm's Blog</title>
+    <script>
+        $(function(){
+            $("#headerContent").load("header.html"); 
+        });
+    </script>
+</head>
+
+<body>
+    <div id="headerContent"></div>
+    
+    <div class="wrapper">
+        <div class="main">
+            <div class="page-intro section">
+                <div class="bgStructBlog page-intro section">
+                    <h2>I.T. Blog</h2>
+                </div>
+                <h3>Coming Soon</h3>
+                <p>
+                    The blog section of my website is where I keep a record of interesting study and research I have done in the field of IT and how I solved complex problems for my various <a href="/projects.html">projects</a>. It is not only important to create software in a standardised way to ensure that your work in easily understood by other programmers, but to keep up to date with the latest technologies and findings from others, and apply these to your own work when it suits.<br/><br/>
+                    You can filter my articles based on programming language that you are interested in, and topics which are covered. Feel free to request topics for me to investigate, or send me any questions about what I have done here, I enjoy chatting with fellow coders!
+                </p>
+            </div>
+
+            <div name="blogPostFilter" class="blogPostFilter">
+                <div>
+                    <label>Filter Posts by Topic:</label>
+                    <input type="checkbox" value="test" name = "allTopicCheck" id="allTopicCheck"/><label for="allTopicCheck">All</label>
+
+                </div>
+                <div>
+                    <label>Filter Posts by Language:</label>
+                    <input type="checkbox" value="test" name = "allLanguageCheck" id="allLanguageCheck"/><label for="allLanguageCheck">All</label>
+                </div>
+            </div>
+
+
+            <!-- <div>
+                <ul class="blogPosts">
+                    <li>
+                        <a href="/blog/posts/linkToThePost.html">
+                            <p class="postInfo">Date Posted - Tag1 Tag2 Tag3 Tag4 Tag5</label>
+                            <p><b>PostTitle</b> - A post extract here</p>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
