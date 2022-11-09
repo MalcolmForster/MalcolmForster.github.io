@@ -29,7 +29,7 @@ body {
 
 h2 {
   /* width:100vw; */
-  font-size: min(10vmin,120px);
+  font-size: min(8vmin,80px);
   margin: var(--gap);  
   color: rgb(255, 255, 255);
   text-shadow: 0 0 20px #000;
@@ -54,7 +54,7 @@ p label{
 }
 
 h3 {
-  font-size: min(7vmin,40px);
+  font-size: min(3vmin,30px);
   padding:20px;
   text-align: center;
   color: var(--dark-grey);
@@ -67,7 +67,7 @@ h3 a {
   color: grey;
   padding:20px;
   border-radius: 10px;
-  font-size: min(7vmin, 25px);
+  font-size: min(3vmin, 25px);
 }
 
 h3 a:hover {
@@ -76,7 +76,7 @@ h3 a:hover {
 }
 
 h4 {
-  font-size: min(5vmin, 20px);
+  font-size: min(3vmin, 20px);
   padding:10px;
   text-align: center;
   color: grey;
@@ -214,8 +214,8 @@ h1 {
   right: 0px;  
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
   /* margin-top:20px; */
 }
 
@@ -239,8 +239,8 @@ h1 {
 
 .section h2 {
   padding: 20px;
-  padding-top:150px;
-  padding-bottom:150px;
+  padding-top:100px;
+  padding-bottom:100px;
 }
 
 .section p, ol {
@@ -250,7 +250,7 @@ h1 {
   padding-bottom: 10px;
   color: black;
   text-align: justify;
-  font-size: min(4vmin,24px);
+  font-size: min(2.5vmin,18px);
   list-style:inside decimal;
 }
 
@@ -259,10 +259,10 @@ h1 {
 }
 
 .page-intro h2 {
-  font-size: min(6vmin,80px);
+  font-size: min(5vmin,50px);
   padding: 20px;
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top:30px;
+  padding-bottom:30px;
 }
 
 .bgStruct {
