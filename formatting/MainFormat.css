@@ -29,7 +29,7 @@ body {
 
 h2 {
   /* width:100vw; */
-  font-size: 10vmin;
+  font-size: min(10vmin,120px);
   margin: var(--gap);  
   color: rgb(255, 255, 255);
   text-shadow: 0 0 20px #000;
@@ -259,6 +259,7 @@ h1 {
 }
 
 .page-intro h2 {
+  font-size: min(6vmin,80px);
   padding: 20px;
   padding-top:50px;
   padding-bottom:50px;
@@ -299,7 +300,7 @@ h1 {
   box-shadow:none;
 }
 
-.bgStructBlog {
+.bgHeader {
   background-image: url(../images/StructCentreNode.jpg);
 }
 
